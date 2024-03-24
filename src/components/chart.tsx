@@ -14,7 +14,7 @@ defaults.plugins.title.color = "black";
 function ChartComponent() {
   return (
     <>
-      <div className="bg-white p-10 rounded-2xl shadow-md">
+      <div className="bg-white p-10 rounded-2xl duration hover:shadow-md">
         <div className="flex justify-between items-center">
           <div>
             <button className="p-2 pl-3 pr-3 rounded-lg bg-gray-100 text-gray-400 flex gap-x-2">
