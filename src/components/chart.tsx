@@ -114,6 +114,9 @@ function ChartComponent() {
                 },
                 scales: {
                   x: {
+                    ticks: {
+                      color: 'rgba(128,128,128,0.9)', // Set color of x-axis labels to gray
+                    },
                     grid: {
                       display: false,
                     },
@@ -125,11 +128,8 @@ function ChartComponent() {
                     },
                   },
                 },
-                layout: {
-                  padding: 0
-                },
                 interaction: {
-                  intersect: false // Disable line intersection events
+                  intersect: false, 
                 },
               }}
             />

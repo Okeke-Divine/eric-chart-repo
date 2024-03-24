@@ -1,31 +1,31 @@
 [
   {
-    "label": "Sep",
+    "label": "SEP",
     "revenue": 62407,
     "cost": 26800
   },
   {
-    "label": "Oct",
+    "label": "OCT",
     "revenue": 82528,
     "cost":  45324
   },
   {
-    "label": "Nov",
+    "label": "NOV",
     "revenue": 56979,
     "cost": 16978
   },
   {
-    "label": "Dec",
+    "label": "DEC",
     "revenue": 97436,
     "cost": 42175
   },
   {
-    "label": "Jan",
+    "label": "JAN",
     "revenue": 64854,
     "cost": 32652
   },
   {
-    "label": "Feb",
+    "label": "FEB",
     "revenue": 102628,
     "cost": 36393
   }
