@@ -1,4 +1,4 @@
-import { Chart as ChartJs, defaults } from "chart.js/auto";
+import { defaults } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 // import the data or replace sourceData using a response from the api
 import sourceData from "../data/sourceData.json";
@@ -19,7 +19,7 @@ defaults.responsive = true;
 function ChartComponent() {
   return (
     <>
-      <div className="bg-white p-10 rounded-2xl duration hover:shadow-md">
+      <div className="bg-white p-10 rounded-2xl duration-300 shadow-sm hover:shadow-md">
         <div className="flex justify-between items-center">
           <div>
             <button className="p-2 pl-3 pr-3 rounded-lg bg-gray-100 text-gray-400 flex gap-x-2 items-center">
@@ -61,25 +61,35 @@ function ChartComponent() {
                 labels: sourceData.map((data) => data.label),
                 datasets: [
                   {
-                    label: "Revenue",
+                    label: "Revenue", 
                     data: sourceData.map((data) => data.revenue),
-                    backgroundColor: "rgba(31,41,55,0.9)",
-                    borderColor: "rgba(31,41,55,0.9)",
-                    borderWidth: 3,
+                    backgroundColor: "rgba(31,41,55,0.9)", // Line color
+                    borderColor: "rgba(31,41,55,0.9)", // Border color
+                    borderWidth: 3, // Line width
+                    pointRadius: 0, // Hide points initially
+                    hoverRadius: 8, // Hover radius
+                    hoverBackgroundColor: "white", // Hover background color
+                    hoverBorderColor: "rgba(31,41,55,0.9)", // Hover border color
+                    hoverBorderWidth: 3, // Hover border width
                   },
                   {
-                    label: "Cost",
+                    label: "Cost", 
                     data: sourceData.map((data) => data.cost),
-                    backgroundColor: "rgba(31,41,55,0.4)",
-                    borderColor: "rgba(31,41,55,0.4)",
-                    borderWidth: 3,
+                    backgroundColor: "rgba(31,41,55,0.4)", // Line color
+                    borderColor: "rgba(31,41,55,0.4)", // Border color
+                    borderWidth: 3, // Line width
+                    pointRadius: 0, // Hide points initially
+                    hoverRadius: 8, // Hover radius
+                    hoverBackgroundColor: "white", // Hover background color
+                    hoverBorderColor: "rgba(31,41,55,0.4)", // Hover border color (adjusted for second line)
+                    hoverBorderWidth: 3, // Hover b
                   },
                 ],
               }}
               options={{
                 elements: {
                   line: {
-                    tension: 0.5,
+                    tension: 0.7,
                   },
                 },
                 plugins: {
@@ -115,7 +125,7 @@ function ChartComponent() {
                 scales: {
                   x: {
                     ticks: {
-                      color: 'rgba(128,128,128,0.9)', // Set color of x-axis labels to gray
+                      color: "rgba(128,128,128,0.9)", // Set color of x-axis labels to gray
                     },
                     grid: {
                       display: false,
@@ -129,7 +139,7 @@ function ChartComponent() {
                   },
                 },
                 interaction: {
-                  intersect: false, 
+                  intersect: false,
                 },
               }}
             />
