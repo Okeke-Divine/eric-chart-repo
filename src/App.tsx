@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <main>
+      <main className="p-10 bg-gray-100">
         <ChartComponent />
       </main>
     </>
