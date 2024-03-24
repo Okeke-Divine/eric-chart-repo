@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import postcss from 'vite-plugin-postcss';
 
 export default defineConfig({
-  plugins: [react(), postcss()], // Add postcss plugin
+  plugins: [react()] // Add postcss plugin
 });
