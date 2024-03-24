@@ -1,15 +1,20 @@
-// import {Chart as ChartJs, default}
 import { Chart as ChartJs, defaults } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
+// import the data or replace sourceData using a response from the api
 import sourceData from "../data/sourceData.json";
+// import ui svg(s)
+import ArrowUpIcon from "../assets/svgs/arrow-up.svg";
+import CalendarIcon from "../assets/svgs/calendar.svg";
+import CheckMarkCircleIcon from "../assets/svgs/checkmark-circle.svg";
+import GraphIcon from "../assets/svgs/grpah.svg";
 
+// chart default settings
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
-
-defaults.plugins.title.display = true;
-defaults.plugins.title.align = "start";
-defaults.plugins.title.font.size = 20;
-defaults.plugins.title.color = "black";
+// defaults.plugins.title.display = true;
+// defaults.plugins.title.align = "start";
+// defaults.plugins.title.font.size = 20;
+// defaults.plugins.title.color = "black";
 
 function ChartComponent() {
   return (
@@ -17,25 +22,27 @@ function ChartComponent() {
       <div className="bg-white p-10 rounded-2xl duration hover:shadow-md">
         <div className="flex justify-between items-center">
           <div>
-            <button className="p-2 pl-3 pr-3 rounded-lg bg-gray-100 text-gray-400 flex gap-x-2">
-              <div>.</div>
+            <button className="p-2 pl-3 pr-3 rounded-lg bg-gray-100 text-gray-400 flex gap-x-2 items-center">
+              <div><img src={CalendarIcon} /></div>
               <div className="font-semibold">This Month</div>
             </button>
           </div>
-          <div>|||</div>
+          <div>
+            <button className="bg-gray-100 p-2 pl-3 pr-3 rounded-lg"><img src={GraphIcon} /></button>
+          </div>
         </div>
         <div className="block md:flex mt-5 flex-wrap">
           <div className="w-full md:w-1/4">
             <div className="text-4xl font-bold">$37.5K</div>
-            <div className="flex justify-between items-center flex-wrap">
+            <div className="flex gap-x-3 items-center">
               <div className="text-gray-400">Total Spent</div>
-              <div className="cs-text-green font-semibold flex gap-x-2 items-center">
-                <div>^</div>
+              <div className="cs-text-green font-semibold flex gap-x-1 items-center">
+                <div><img src={ArrowUpIcon} /></div>
                 <div>+2.45%</div>
               </div>
             </div>
-            <div className="cs-text-green mt-1 font-semibold flex gap-x-2 items-center">
-              <div>()</div>
+            <div className="cs-text-green mt-5 font-semibold flex gap-x-2 items-center">
+              <div><img src={CheckMarkCircleIcon} /></div>
               <div>On Track</div>
             </div>
           </div>
