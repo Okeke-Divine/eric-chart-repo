@@ -65,12 +65,14 @@ function ChartComponent() {
                     data: sourceData.map((data) => data.revenue),
                     backgroundColor: "rgba(31,41,55,0.9)",
                     borderColor: "rgba(31,41,55,0.9)",
+                    borderWidth: 3,
                   },
                   {
                     label: "Cost",
                     data: sourceData.map((data) => data.cost),
                     backgroundColor: "rgba(31,41,55,0.4)",
                     borderColor: "rgba(31,41,55,0.4)",
+                    borderWidth: 3,
                   },
                 ],
               }}
@@ -117,10 +119,17 @@ function ChartComponent() {
                     },
                   },
                   y: {
+                    display: false,
                     grid: {
                       display: false,
                     },
                   },
+                },
+                layout: {
+                  padding: 0
+                },
+                interaction: {
+                  intersect: false // Disable line intersection events
                 },
               }}
             />

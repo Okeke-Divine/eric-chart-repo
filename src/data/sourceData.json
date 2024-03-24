@@ -2,22 +2,22 @@
   {
     "label": "Sep",
     "revenue": 62407,
-    "cost": 43349
+    "cost": 26800
   },
   {
     "label": "Oct",
     "revenue": 82528,
-    "cost":  55324
+    "cost":  45324
   },
   {
     "label": "Nov",
     "revenue": 56979,
-    "cost": 32978
+    "cost": 16978
   },
   {
     "label": "Dec",
     "revenue": 97436,
-    "cost": 62175
+    "cost": 42175
   },
   {
     "label": "Jan",
@@ -27,6 +27,6 @@
   {
     "label": "Feb",
     "revenue": 102628,
-    "cost": 76393
+    "cost": 36393
   }
 ]
