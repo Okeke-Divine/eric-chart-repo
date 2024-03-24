@@ -23,12 +23,16 @@ function ChartComponent() {
         <div className="flex justify-between items-center">
           <div>
             <button className="p-2 pl-3 pr-3 rounded-lg bg-gray-100 text-gray-400 flex gap-x-2 items-center">
-              <div><img src={CalendarIcon} /></div>
+              <div>
+                <img src={CalendarIcon} />
+              </div>
               <div className="font-semibold">This Month</div>
             </button>
           </div>
           <div>
-            <button className="bg-gray-100 p-2 pl-3 pr-3 rounded-lg"><img src={GraphIcon} /></button>
+            <button className="bg-gray-100 p-2 pl-3 pr-3 rounded-lg">
+              <img src={GraphIcon} />
+            </button>
           </div>
         </div>
         <div className="block md:flex mt-5 flex-wrap">
@@ -37,12 +41,16 @@ function ChartComponent() {
             <div className="flex gap-x-3 items-center">
               <div className="text-gray-400">Total Spent</div>
               <div className="cs-text-green font-semibold flex gap-x-1 items-center">
-                <div><img src={ArrowUpIcon} /></div>
+                <div>
+                  <img src={ArrowUpIcon} />
+                </div>
                 <div>+2.45%</div>
               </div>
             </div>
             <div className="cs-text-green mt-5 font-semibold flex gap-x-2 items-center">
-              <div><img src={CheckMarkCircleIcon} /></div>
+              <div>
+                <img src={CheckMarkCircleIcon} />
+              </div>
               <div>On Track</div>
             </div>
           </div>
@@ -55,14 +63,14 @@ function ChartComponent() {
                   {
                     label: "Revenue",
                     data: sourceData.map((data) => data.revenue),
-                    backgroundColor: "black",
-                    borderColor: "black",
+                    backgroundColor: "rgba(31,41,55,0.9)",
+                    borderColor: "rgba(31,41,55,0.9)",
                   },
                   {
                     label: "Cost",
                     data: sourceData.map((data) => data.cost),
-                    backgroundColor: "gray",
-                    borderColor: "gray",
+                    backgroundColor: "rgba(31,41,55,0.4)",
+                    borderColor: "rgba(31,41,55,0.4)",
                   },
                 ],
               }}
@@ -75,6 +83,31 @@ function ChartComponent() {
                 plugins: {
                   title: {
                     text: false,
+                  },
+                  tooltip: {
+                    yAlign: "bottom",
+                    enabled: true,
+                    displayColors: false,
+                    callbacks: {
+                      title: () => null,
+                      label: function (context) {
+                        let label = "";
+
+                        if (label) {
+                          label += ": ";
+                        }
+                        if (context.parsed.y !== null) {
+                          label += new Intl.NumberFormat("en-US", {
+                            style: "currency",
+                            currency: "USD",
+                          }).format(context.parsed.y);
+                        }
+                        return label;
+                      },
+                    },
+                  },
+                  legend: {
+                    display: false,
                   },
                 },
                 scales: {
