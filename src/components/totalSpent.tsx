@@ -16,7 +16,7 @@ defaults.responsive = true;
 // defaults.plugins.title.font.size = 20;
 // defaults.plugins.title.color = "black";
 
-function ChartComponent() {
+function TotalSpent() {
   return (
     <>
       <div className="bg-white p-10 rounded-2xl duration-300 shadow-sm hover:shadow-md">
@@ -61,7 +61,7 @@ function ChartComponent() {
                 labels: sourceData.map((data) => data.label),
                 datasets: [
                   {
-                    label: "Revenue", 
+                    label: "Revenue",
                     data: sourceData.map((data) => data.revenue),
                     backgroundColor: "rgba(31,41,55,0.9)", // Line color
                     borderColor: "rgba(31,41,55,0.9)", // Border color
@@ -73,7 +73,7 @@ function ChartComponent() {
                     hoverBorderWidth: 3, // Hover border width
                   },
                   {
-                    label: "Cost", 
+                    label: "Cost",
                     data: sourceData.map((data) => data.cost),
                     backgroundColor: "rgba(31,41,55,0.4)", // Line color
                     borderColor: "rgba(31,41,55,0.4)", // Border color

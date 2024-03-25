@@ -1,4 +1,5 @@
-import ChartComponent from "./components/chart.tsx";
+import TotalSpent from "./components/totalSpent.tsx";
+import TotalOrders from "./components/totalOrders.jsx";
 
 function App() {
 
@@ -10,11 +11,14 @@ function App() {
         </div>
         <div className="block md:flex">
           <div className="w-full md:w-3/4">
-            <ChartComponent />
+            <TotalSpent />
           </div>
           <div className="w-full md:w-1/4">
             Other Components
           </div>
+        </div>
+        <div className="mt-5 block md:flex">
+          <TotalOrders />
         </div>
       </main>
     </>
