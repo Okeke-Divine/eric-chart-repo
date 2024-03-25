@@ -40,7 +40,7 @@ export default function TotalProfit() {
                 datasets: [
                   {
                     label: "Profit",
-                    data: totalProfit.map((data) => data.orders),
+                    data: totalProfit.map((data) => data.profit),
                     backgroundColor: "#1EB564", // Line color
                     borderColor: "#1EB564", // Border color
                     borderWidth: 3, // Line width

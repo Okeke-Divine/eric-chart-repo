@@ -1,26 +1,26 @@
 [
     {
       "label": "SEP",
-      "orders": 32407
+      "profit": 32407
     },
     {
       "label": "OCT",
-      "orders": 65528
+      "profit": 65528
     },
     {
       "label": "NOV",
-      "orders": 41000
+      "profit": 41000
     },
     {
       "label": "DEC",
-      "orders": 87436
+      "profit": 87436
     },
     {
       "label": "JAN",
-      "orders": 70436
+      "profit": 70436
     },
     {
       "label": "FEB",
-      "orders": 90436
+      "profit": 90436
     }
   ]
