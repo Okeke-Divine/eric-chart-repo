@@ -5,7 +5,7 @@
   },
   {
     "label": "OCT",
-    "orders": 65528
+    "orders": 55528
   },
   {
     "label": "NOV",
@@ -13,6 +13,14 @@
   },
   {
     "label": "DEC",
-    "orders": 87436
+    "orders": 67436
+  },
+  {
+    "label": "JAN",
+    "orders": 62436
+  },
+  {
+    "label": "FEB",
+    "orders": 64436
   }
 ]

@@ -13,7 +13,7 @@ defaults.responsive = true;
 export default function TotalOrders() {
   return (
     <>
-      <div className="w-full bg-white md:w-1/3 mb-2 md:mb-0 p-5 rounded-lg shadow-sm duration-300 hover:shadow-md">
+      <div className="w-full bg-white md:w-1/3 mb-2 md:mb-0 p-5 rounded-lg shadow-sm duration-300 hover:shadow-md h-fit">
         <div className="block md:flex mt-5 flex-wrap">
           <div className="w-full md:w-1/2">
             <div className="text-xl font-semibold">Total Orders</div>
@@ -36,7 +36,7 @@ export default function TotalOrders() {
                 labels: totalOrders.map((data) => data.label),
                 datasets: [
                   {
-                    label: "Revenue",
+                    label: "Orders",
                     data: totalOrders.map((data) => data.orders),
                     backgroundColor: "#1EB564", // Line color
                     borderColor: "#1EB564", // Border color

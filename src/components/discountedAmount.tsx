@@ -12,7 +12,7 @@ defaults.responsive = true;
 export default function DiscountedAmount() {
   return (
     <>
-      <div className="w-full bg-white md:w-1/3 mb-2 md:mb-0 p-5 rounded-lg shadow-sm duration-300 hover:shadow-md">
+      <div className="w-full bg-white md:w-1/3 mb-2 md:mb-0 p-5 rounded-lg shadow-sm duration-300 hover:shadow-md h-fit">
         <div className="block md:flex mt-5 flex-wrap">
           <div className="w-full md:w-1/2">
             <div className="text-xl font-semibold">Discounted Amount</div>

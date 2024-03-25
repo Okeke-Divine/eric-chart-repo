@@ -19,7 +19,7 @@ function App() {
             Other Components
           </div>
         </div>
-        <div className="mt-5 block md:flex gap-x-5">
+        <div className="mt-5 block md:flex gap-x-5 items-center">
           <TotalOrders />
           <TotalProfit />
           <DiscountedAmount />
