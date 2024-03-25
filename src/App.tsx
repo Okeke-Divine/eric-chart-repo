@@ -1,5 +1,7 @@
 import TotalSpent from "./components/totalSpent.tsx";
-import TotalOrders from "./components/totalOrders.jsx";
+import TotalOrders from "./components/totalOrder.tsx";
+import TotalProfit from "./components/totalProfit.tsx";
+import DiscountedAmount from "./components/discountedAmount.tsx";
 
 function App() {
 
@@ -17,8 +19,10 @@ function App() {
             Other Components
           </div>
         </div>
-        <div className="mt-5 block md:flex">
+        <div className="mt-5 block md:flex gap-x-5">
           <TotalOrders />
+          <TotalProfit />
+          <DiscountedAmount />
         </div>
       </main>
     </>

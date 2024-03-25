@@ -1,7 +1,7 @@
 import { defaults } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
-// import the data or replace sourceData using a response from the api
-import sourceData from "../data/sourceData.json";
+// import the data or replace totalSpent using a response from the api
+import totalSpent from "../data/totalSpent.json";
 // import ui svg(s)
 import ArrowUpIcon from "../assets/svgs/arrow-up.svg";
 import CalendarIcon from "../assets/svgs/calendar.svg";
@@ -58,11 +58,11 @@ function TotalSpent() {
             {/* chart */}
             <Line
               data={{
-                labels: sourceData.map((data) => data.label),
+                labels: totalSpent.map((data) => data.label),
                 datasets: [
                   {
                     label: "Revenue",
-                    data: sourceData.map((data) => data.revenue),
+                    data: totalSpent.map((data) => data.revenue),
                     backgroundColor: "rgba(31,41,55,0.9)", // Line color
                     borderColor: "rgba(31,41,55,0.9)", // Border color
                     borderWidth: 3, // Line width
@@ -74,7 +74,7 @@ function TotalSpent() {
                   },
                   {
                     label: "Cost",
-                    data: sourceData.map((data) => data.cost),
+                    data: totalSpent.map((data) => data.cost),
                     backgroundColor: "rgba(31,41,55,0.4)", // Line color
                     borderColor: "rgba(31,41,55,0.4)", // Border color
                     borderWidth: 3, // Line width
@@ -150,4 +150,4 @@ function TotalSpent() {
   );
 }
 
-export default ChartComponent;
+export default TotalSpent;
