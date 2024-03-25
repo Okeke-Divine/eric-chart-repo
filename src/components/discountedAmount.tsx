@@ -38,13 +38,13 @@ export default function DiscountedAmount() {
                   {
                     label: "Discount",
                     data: discountedAmount.map((data) => data.discount),
-                    backgroundColor: "#1EB564", // Line color
-                    borderColor: "#1EB564", // Border color
+                    backgroundColor: "#D02626", // Line color
+                    borderColor: "#D02626", // Border color
                     borderWidth: 3, // Line width
                     pointRadius: 0, // Hide points initially
                     hoverRadius: 8, // Hover radius
                     hoverBackgroundColor: "white", // Hover background color
-                    hoverBorderColor: "#1EB564", // Hover border color
+                    hoverBorderColor: "#D02626", // Hover border color
                     hoverBorderWidth: 3, // Hover border width
                   },
                 ],
@@ -87,7 +87,7 @@ export default function DiscountedAmount() {
                 scales: {
                   x: {
                     ticks: {
-                      color: "#1EB564", // Set color of x-axis labels to gray
+                      color: "#D02626", // Set color of x-axis labels to gray
                     },
                     grid: {
                       display: false,

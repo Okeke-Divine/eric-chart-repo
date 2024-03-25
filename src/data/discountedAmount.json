@@ -1,7 +1,7 @@
 [
   {
     "label": "SEP",
-    "discount": 62407
+    "discount": 58407
   },
   {
     "label": "OCT",
@@ -9,18 +9,18 @@
   },
   {
     "label": "NOV",
-    "discount": 49000
+    "discount": 56000
   },
   {
     "label": "DEC",
-    "discount": 46436
+    "discount": 51436
   },
   {
     "label": "JAN",
-    "discount": 40436
+    "discount": 50436
   },
   {
     "label": "FEB",
-    "discount": 38436
+    "discount": 52436
   }
 ]
